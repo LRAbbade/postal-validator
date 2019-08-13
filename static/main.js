@@ -17,6 +17,7 @@ $("#validate-btn").click(() => {
 
             $("#result").text(text);
             $("#results-div").removeAttr('hidden');
+            $("#error-message").text('error' in res ? res.error : "");
         },
         error: () => {
             alert(`Erro ao consultar cep "${cep}"`);

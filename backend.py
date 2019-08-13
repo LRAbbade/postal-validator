@@ -12,10 +12,13 @@ def validate_cep():
     cep = str(request.args.get('cep'))
     try:
         res = Validate(cep)
+        error = None
     except Exception as e:
-        res = str(e)
+        res = False
+        error = str(e)
 
     return jsonify({
         'cep': cep,
-        'result': res
+        'result': res,
+        'error': error
     })
