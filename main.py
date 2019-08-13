@@ -1,5 +1,6 @@
 import re
 
+# Compilando as regex pra melhorar o desempenho
 check_alternate_pairs = re.compile(r'(\d)\d\1')
 check_size = re.compile(r'^\d{6}$')
 

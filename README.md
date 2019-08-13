@@ -4,7 +4,7 @@ This project is made to validate brazilian postal codes.
 
 ---
 
-To run the tests, just:
+Running the tests:
 
 ```sh
 python -m unittest
