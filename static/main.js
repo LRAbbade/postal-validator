@@ -1,4 +1,4 @@
-const validateRoute = 'http://localhost:5000/validate';
+const validateRoute = 'http://localhost/validate';
 
 $("#validate-btn").click(() => {
     const cep = $('#cep').val();
